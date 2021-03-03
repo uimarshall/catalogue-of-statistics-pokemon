@@ -13,7 +13,7 @@ Variables
 
 :root {
   /* dark shades of primary color */
-  --clr-primary-0: #2A2E43;
+  --clr-primary-0: #2a2e43;
   --clr-primary-1: #044c53;
   --clr-primary-2: #0a6c75;
   --clr-primary-3: #0e7c86;
@@ -28,7 +28,7 @@ Variables
   --clr-primary-8: #88ebf2;
   --clr-primary-9: #bff8fd;
   --clr-primary-10: #e0fcff;
-  --clr-primary-11: #267A88;
+  --clr-primary-11: #267a88;
 
   /* darkest grey - used for headings */
   --clr-grey-1: #102a42;
@@ -48,9 +48,9 @@ Variables
   --clr-red-light: #e66b6b;
   --clr-green-dark: #25bb32;
   --clr-green-light: #6be675;
-  --clr-yellow: #FFB900;
+  --clr-yellow: #ffb900;
   --clr-black: #222;
-  --clr-text-color: #2A2E3F;
+  --clr-text-color: #2a2e3f;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
@@ -79,7 +79,7 @@ Global Styles
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-primary-0);
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -91,7 +91,8 @@ ul {
 a {
   text-decoration: none;
 }
-/* 
+
+/*
  img {
   width: 100%;
   display: block;
@@ -210,4 +211,3 @@ p {
 main {
   padding-bottom: 2rem;
 }
-
