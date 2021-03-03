@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function PokemonDetails() {
-    return (
-        <div>
-            <p>pokemon details</p>
-        </div>
-    )
+  return (
+    <div>
+      <p>pokemon details</p>
+    </div>
+  );
 }
 
-export default PokemonDetails
+export default PokemonDetails;
