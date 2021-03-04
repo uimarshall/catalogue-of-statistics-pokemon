@@ -4,7 +4,7 @@ import Header from './Header';
 import '../assets/css/PokemonFilter.css';
 
 const PokemonFilter = props => {
-  const pokemonCategories = [
+  const pokemonMovesCategories = [
     'normal',
     'fire',
     'water',
@@ -25,18 +25,6 @@ const PokemonFilter = props => {
   ];
   const { onClick, category } = props;
   return (
-  // <div className="form-group w-75 m-auto">
-  //   <h3 className="d-flex justify-content-center align-items-center">
-  //     Select Pokemon Type:
-  //     <span className="ml-2">
-  //       <select name="category" className="custom-select"
-  // value={category} onChange={e => onClick(e)}>
-  //         <option value="">Select category</option>
-  //         {pokemonCategories.map(type => (<option key={type} value={type}>{type}</option>))}
-  //       </select>
-  //     </span>
-  //   </h3>
-  // </div>
     <Header>
       <div className="container">
         <div className="row">
@@ -45,7 +33,8 @@ const PokemonFilter = props => {
               Select Pokemon Type:
               <select className="custom-select my-select my-2" name="category" value={category} onChange={e => onClick(e)}>
                 <option>Select category</option>
-                {pokemonCategories.map(type => (<option key={type} value={type}>{type}</option>))}
+                {pokemonMovesCategories
+                  .map(type => (<option key={type} value={type}>{type}</option>))}
               </select>
             </label>
 

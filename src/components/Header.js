@@ -25,7 +25,10 @@ function Header({ children }) {
 }
 
 Header.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.objectOf(Array),
+};
+Header.defaultProps = {
+  children: '',
 };
 
 export default Header;
