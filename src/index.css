@@ -188,6 +188,15 @@ p {
   color: var(--clr-primary-1);
 }
 
+.bg-yellow {
+  background: var(--clr-yellow);
+}
+
+.icon-color {
+  color: var(--clr-primary-7);
+  margin-right: 10px;
+}
+
 /* section */
 .section {
   padding: 1rem 0;
@@ -374,5 +383,25 @@ label:not(.input-group-text) {
 @media (min-width: 768px) {
   .main-search-box .search-form .search-input {
     width: 560px;
+  }
+}
+
+/* pokemon-details */
+.pokemon-details {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 400px 1fr;
+  padding: 50px;
+  background: #ddd;
+  align-items: center;
+}
+
+.dish-desc {
+  background: var(--clr-yellow);
+}
+
+@media (max-width: 700px) {
+  .pokemon-details {
+    grid-template-columns: 1fr;
   }
 }
