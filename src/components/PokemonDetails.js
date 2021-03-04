@@ -44,7 +44,7 @@ function PokemonDetails({ pokemon }) {
               </li>
             ))}
           </ul>
-          <button type="button" className="btn btn-secondary learn-more" onClick={handleGoBack}>Go back</button>
+          <button type="button" className="btn btn-secondary learn-more" onClick={handleGoBack}>Back Home</button>
         </div>
       </div>
     </section>
