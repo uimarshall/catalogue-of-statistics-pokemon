@@ -1,11 +1,76 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
+import Spinner from 'react-bootstrap/Spinner';
+import { getPokemonsError, getAllPokemons, getPokemonPending } from '../reducers/pokemonsReducer';
+import { getPokemon } from '../actions/pokemonActions';
+import PokemonDetails from '../components/PokemonDetails';
 
-function Card() {
+const Card = ({ fetchPokemon, data }) => {
+  const { error, pending, pokemons = [] } = data;
+
+  const { name } = useParams();
+
+  useEffect(() => {
+    fetchPokemon(name);
+  }, []);
+
+  if (error) {
+    return (
+      <div className="error">
+        {console.log(error)}
+        ;
+        {/* {error} */}
+      </div>
+    );
+  }
+  if (pending) {
+    return (
+      <div className="d-flex justify-content-center">
+        <Spinner animation="grow" />
+      </div>
+    );
+  }
+  if (pokemons.length === 1) {
+    return <PokemonDetails pokemon={pokemons[0]} />;
+  }
+
   return (
-    <div>
-      <p>Pokemon cards</p>
+    <div className="d-flex justify-content-center">
+      <Spinner animation="grow" />
     </div>
   );
-}
+};
 
-export default Card;
+const mapDispatchToProps = dispatch => bindActionCreators({
+  fetchPokemon: getPokemon,
+}, dispatch);
+
+const mapStateToProps = state => ({
+  data: {
+    error: getPokemonsError(state.data),
+    pokemons: getAllPokemons(state.data),
+    pending: getPokemonPending(state.data),
+  },
+});
+
+Card.defaultProps = {
+  data: {
+    error: null,
+    pending: true,
+    pokemons: [],
+  },
+};
+
+Card.propTypes = {
+  data: PropTypes.shape({
+    error: PropTypes.objectOf(PropTypes.string),
+    pending: PropTypes.bool,
+    pokemons: PropTypes.arrayOf(PropTypes.object),
+  }),
+  fetchPokemon: PropTypes.func.isRequired,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card);
