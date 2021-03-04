@@ -2,6 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { FaCheckCircle } from 'react-icons/fa';
+import '../assets/css/PokemonDetails.css';
 import picture from '../assets/images/icon.svg';
 
 function PokemonDetails({ pokemon }) {
