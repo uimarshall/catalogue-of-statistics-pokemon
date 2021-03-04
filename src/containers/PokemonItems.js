@@ -8,6 +8,7 @@ import { getPokemonsError, getAllPokemons, getPokemonsPending } from '../reducer
 import { getPokemonType } from '../reducers/filterReducer';
 import DisplayPokemon from '../components/DisplayPokemon';
 import PokemonFilter from '../components/PokemonFilter';
+import AlertDismissible from '../utils/Alert';
 
 class PokemonItems extends React.Component {
   constructor(props) {
@@ -32,12 +33,13 @@ class PokemonItems extends React.Component {
     const { data, filter } = this.props;
     const { error, pending, pokemons } = data;
     if (error) {
-      console.log((error));
+      <AlertDismissible />;
+
       return (
         <div className="error">
-          {/* {error} */}
-          {console.log(error)}
-          <p>an error</p>
+
+          <AlertDismissible />
+
         </div>
       );
     }
