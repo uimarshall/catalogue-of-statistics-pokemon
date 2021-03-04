@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import uuid from 'react-uuid';
+import '../assets/css/DisplayPokemon.css';
 import picture from '../assets/images/legendary-pokemon-200.png';
 
 const id = () => uuid();
