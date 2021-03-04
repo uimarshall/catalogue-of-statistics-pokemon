@@ -228,20 +228,6 @@ main {
 }
 
 
-/* Pokemon filter */
-
-label:not(.input-group-text) {
-  margin-top: 10px;
-}
-
-.my-select {
-  background-color: var(--clr-light-brown);
-  color: var(--clr-dark-grey);
-  border: 0 none;
-  border-radius: 20px;
-  padding: 6px 20px;
-}
-
 /* pokemon-details */
 .pokemon-details {
   display: grid;

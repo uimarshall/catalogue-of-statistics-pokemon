@@ -1,18 +1,7 @@
-// import React from 'react';
-
-// function PokemonFilter() {
-//   return (
-//     <div>
-//       <p>Pokemon filter</p>
-//     </div>
-//   );
-// }
-
-// export default PokemonFilter;
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
+import '../assets/css/PokemonFilter.css';
 
 const PokemonFilter = props => {
   const pokemonCategories = [
