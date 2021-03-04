@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Gelasio:wght@400;500;700&family=Open+Sans:wght@400;600;700;800&family=Roboto+Slab:wght@400;500;700;900&family=Volkhov:wght@400;700&display=swap');
 
 /*
 ===============
@@ -51,8 +51,14 @@ Variables
   --clr-yellow: #ffb900;
   --clr-black: #222;
   --clr-text-color: #2a2e3f;
+  --clr-light-brown: #dabcaa;
+  --clr-dark-grey: #5f6162;
   --ff-primary: 'Roboto', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
+  --ff-courgette: 'Courgette', cursive;
+  --ff-gelasio: 'Gelasio', serif;
+  --ff-volkhov: 'Volkhov', serif;
+  --ff-roboto-slab: 'Roboto Slab', serif;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -78,7 +84,7 @@ Global Styles
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: var(--clr-primary-0);
   color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -215,13 +221,13 @@ main {
 .features {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
 }
 
 .feature {
   background: #eee;
   padding: 10px;
-  border: 1px solid #fff;
+  border: 1px solid var(--clr-white);
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
@@ -232,4 +238,141 @@ main {
 
 .feature p {
   color: #333;
+}
+
+.features a:hover {
+  color: #fff;
+  background: var(--clr-primary-3);
+  transform: scaleY(1.1);
+}
+
+/* Pokemon filter */
+
+label:not(.input-group-text) {
+  margin-top: 10px;
+}
+
+.my-select {
+  background-color: var(--clr-light-brown);
+  color: var(--clr-dark-grey);
+  border: 0 none;
+  border-radius: 20px;
+  padding: 6px 20px;
+}
+
+/* ====== Header ====== */
+.header {
+  background: #494d55;
+  color: rgba(255, 255, 255, 0.85);
+  border-top: 5px solid #40babd;
+  padding: 30px 0;
+}
+
+.header .container {
+  position: relative;
+}
+
+.branding {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.branding .logo {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.branding .logo a {
+  text-decoration: none;
+}
+
+.branding .text-highlight {
+  color: #40babd;
+  font-family: var(--ff-courgette);
+  font-size: 4rem;
+}
+
+.branding .text-bold {
+  font-weight: 800;
+  color: #fff;
+  font-family: var(--ff-gelasio);
+  font-size: 4rem;
+}
+
+.branding .icon {
+  font-size: 24px;
+  color: #40babd;
+}
+
+.body-green .branding .icon {
+  color: #75c181;
+}
+
+.body-blue .branding .icon {
+  color: #58bbee;
+}
+
+.body-orange .branding .icon {
+  color: #f88c30;
+}
+
+.body-red .branding .icon {
+  color: #f77b6b;
+}
+
+.body-pink .branding .icon {
+  color: #ea5395;
+}
+
+.body-purple .branding .icon {
+  color: #8a40a7;
+}
+
+@media (max-width: 575.98px) {
+  .main-search-box {
+    width: 100%;
+  }
+
+  .branding .text-highlight {
+    font-size: 2rem;
+  }
+
+  .branding .text-bold {
+    font-size: 2rem;
+  }
+
+  .main-search-box .search-form .search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cards-section .item-inner {
+    padding: 30px 15px;
+  }
+
+  .branding .text-highlight {
+    font-size: 2.5rem;
+  }
+
+  .col {
+    text-align: center !important;
+  }
+
+  .branding .text-bold {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-search-box .search-form .search-input {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-search-box .search-form .search-input {
+    width: 560px;
+  }
 }
