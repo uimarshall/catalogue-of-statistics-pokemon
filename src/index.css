@@ -78,7 +78,7 @@ Global Styles
 
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-primary-0);
+  background: var(--clr-white);
   color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;

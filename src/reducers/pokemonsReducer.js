@@ -47,7 +47,7 @@ const pokemonsReducer = (state = initialState, action) => {
 };
 
 export default pokemonsReducer;
-export const getPokemons = state => state.pokemons;
+export const getAllPokemons = state => state.pokemons;
 export const getPokemonsPending = state => state.pending;
 export const getPokemonPending = state => state.pendingPokemon;
 export const getPokemonsError = state => state.error;
