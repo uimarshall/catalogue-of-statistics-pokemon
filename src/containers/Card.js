@@ -7,6 +7,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import { getPokemonsError, getAllPokemons, getPokemonPending } from '../reducers/pokemonsReducer';
 import { getPokemon } from '../actions/pokemonActions';
 import PokemonDetails from '../components/PokemonDetails';
+import AlertDismissible from '../utils/Alert';
 
 const Card = ({ fetchPokemon, data }) => {
   const { error, pending, pokemons = [] } = data;
@@ -20,9 +21,9 @@ const Card = ({ fetchPokemon, data }) => {
   if (error) {
     return (
       <div className="error">
-        {console.log(error)}
-        ;
-        {/* {error} */}
+        render(
+        <AlertDismissible />
+        );
       </div>
     );
   }
