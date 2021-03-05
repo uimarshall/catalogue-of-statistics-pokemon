@@ -5,7 +5,7 @@ import '../assets/css/Header.css';
 function Header({ children }) {
   return (
     <>
-      <header className="header text-center">
+      <header className="header text-center" data-testid="header">
         <div className="container">
           <div className="branding">
             <h1 className="logo">
