@@ -12,10 +12,10 @@ const DisplayPokemon = ({ pokemon }) => (
   <section className="features">
     <Link to={`/pokemon/${pokemon.name}`} className="d-block py-2">
       <div className="feature py-2" key={id.toString()}>
-        <img src={pokemon.image ? pokemon.image : picture} alt={pokemon.name} className="icon h-auto" />
+        <img data-testid="pok-img" src={pokemon.image ? pokemon.image : picture} alt={pokemon.name} className="icon h-auto" />
         <p>{pokemon.name}</p>
         <p>
-          <Button variant="warning">View Details</Button>
+          <Button type="button" variant="warning" data-testid="details-button">View Details</Button>
         </p>
       </div>
     </Link>
