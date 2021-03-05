@@ -42,7 +42,7 @@ afterEach(() => {
 
 it('renders with or without a prop', () => {
   act(() => {
-    render(<Header />, container);
+    render(<Header><PokemonFilter onClick={handleFilterChange} /></Header>, container);
   });
   expect(container.textContent).toBe('');
 });
