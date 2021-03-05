@@ -29,8 +29,8 @@ const Card = ({ fetchPokemon, data }) => {
   }
   if (pending) {
     return (
-      <div className="d-flex justify-content-center">
-        <Spinner animation="grow" />
+      <div className="d-flex justify-content-center align-items-center">
+        <Spinner animation="border" variant="warning" />
       </div>
     );
   }
@@ -39,8 +39,8 @@ const Card = ({ fetchPokemon, data }) => {
   }
 
   return (
-    <div className="d-flex justify-content-center">
-      <Spinner animation="grow" />
+    <div className="d-flex justify-content-center align-items-center">
+      <Spinner animation="border" variant="warning" />
     </div>
   );
 };

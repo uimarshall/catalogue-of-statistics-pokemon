@@ -46,16 +46,15 @@ class PokemonItems extends React.Component {
 
     if (pending) {
       return (
-        <div className="d-flex justify-content-center">
-          <Spinner animation="grow" />
+        <div className="d-flex justify-content-center align-items-center">
+          <Spinner animation="border" variant="warning" />
         </div>
       );
     }
-
     if (pokemons.length < 2) {
       return (
-        <div className="d-flex justify-content-center">
-          <Spinner animation="grow" />
+        <div className="d-flex justify-content-center align-items-center">
+          <Spinner animation="border" variant="warning" />
         </div>
       );
     }
