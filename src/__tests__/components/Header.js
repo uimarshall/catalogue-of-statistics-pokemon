@@ -2,6 +2,8 @@ import '@testing-library/jest-dom';
 
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
+import { unmountComponentAtNode } from "react-dom";
+import { act } from "react-dom/test-utils";
 import Header from '../../components/Header';
 import PokemonFilter from '../../components/PokemonFilter';
 
@@ -21,6 +23,59 @@ describe('Proper Rendering', () => {
     render(<Header><PokemonFilter onClick={handleFilterChange}/></Header>);
 
     expect(screen.queryByText(/Run faster now/)).toBeNull();
+  });
+});
+
+let container = null;
+beforeEach(() => {
+  // setup a DOM element as a render target
+  container = document.createElement("div");
+  document.body.appendChild(container);
+});
+
+afterEach(() => {
+  // cleanup on exiting
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
+});
+
+it("renders with or without a prop", () => {
+  act(() => {
+    render(<Header />, container);
+  });
+  expect(container.textContent).toBe("");
+
+  
+});
+
+describe('To Have Class Names', () => {
+  test('renders Class names correctly', () => {
+    const{getByTestId}=render(<Header><PokemonFilter onClick={handleFilterChange}/></Header>);
+
+    const selectOption = getByTestId('filter-descendant')
+    expect(selectOption).toHaveClass('option')
+    expect(selectOption).not.toHaveClass('select')
+
+  });
+});
+
+describe('To be in the document', () => {
+  test('renders the elements in the doc correctly', () => {
+    const{getByTestId}=render(<Header><PokemonFilter onClick={handleFilterChange}/></Header>);
+
+    const selectOption = getByTestId('filter-descendant')
+    expect(selectOption).toBeInTheDocument()
+
+  });
+});
+describe('Test toBeEmptyDOMElement', () => {
+  test('element has no visible content for the user', () => {
+    const{getByTestId}=render(<Header><PokemonFilter onClick={handleFilterChange}/></Header>);
+
+    const emptyElem = getByTestId('filter-descendant')
+    expect(emptyElem).not.toBeEmptyDOMElement()
+
   });
 });
 
