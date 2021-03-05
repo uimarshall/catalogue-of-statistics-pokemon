@@ -15,7 +15,7 @@ function Header({ children }) {
             </h1>
           </div>
         </div>
-        <div className="text-center">
+        <div className="text-center" data-testid="parent">
           {children}
         </div>
       </header>
