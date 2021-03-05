@@ -56,12 +56,3 @@ describe('Test toHaveValue', () => {
     expect(element).toHaveDisplayValue(['normal']);
   });
 });
-
-afterEach(cleanup);
-
-describe('Test Categories', () => {
-  test('renders categories', () => {
-    const fakeCat = ['nurse', 'agape', 'nuance'];
-    render(<PokemonFilter onClick={handleFilterChange} category={fakeCat} />);
-  });
-});
