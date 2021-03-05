@@ -57,13 +57,11 @@ describe('Test toHaveValue', () => {
   });
 });
 
-afterEach(cleanup)
+afterEach(cleanup);
 
 describe('Test Categories', () => {
   test('renders categories', () => {
-    const fakeCat = ['nurse','agape','nuance',]
-    render(<PokemonFilter onClick={handleFilterChange} category={fakeCat}/>);
-
+    const fakeCat = ['nurse', 'agape', 'nuance'];
+    render(<PokemonFilter onClick={handleFilterChange} category={fakeCat} />);
   });
 });
-
