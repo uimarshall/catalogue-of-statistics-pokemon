@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
 import * as React from 'react';
-import { render, screen } from '@testing-library/react';
+import { cleanup, render, screen } from '@testing-library/react';
 import PokemonFilter from '../../components/PokemonFilter';
 
 const handleFilterChange = () => { ''; };
@@ -56,3 +56,14 @@ describe('Test toHaveValue', () => {
     expect(element).toHaveDisplayValue(['normal']);
   });
 });
+
+afterEach(cleanup)
+
+describe('Test Categories', () => {
+  test('renders categories', () => {
+    const fakeCat = ['nurse','agape','nuance',]
+    render(<PokemonFilter onClick={handleFilterChange} category={fakeCat}/>);
+
+  });
+});
+
