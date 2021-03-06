@@ -15,10 +15,12 @@ Final React Project of the Microverse Technical Curriculum Program, this project
 
 ## Video Presentation:
 
-[Watch Catalogue of Pokemons](https://www.loom.com/share/f032b680574841f59371be7dc62a921f)
+[![Watch Catalogue of Pokemons](public/video-presentation.png)](https://www.loom.com/share/f032b680574841f59371be7dc62a921f)
+
+[]()
 
 
-## Link to Live host:
+## Link to Live Demo:
 
 [Catalog'fPokemons](https://pokemon-catalogue-stats.herokuapp.com/)
 
