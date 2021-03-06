@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/uimarshall/catalogue-of-statistics-pokemon/pull/1
 
-## Available Scripts
+![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
-In the project directory, you can run:
+# Capstone Project: Catalogue of Statistics
 
-### `npm start`
+Final React Project of the Microverse Technical Curriculum Program, this project consists in a Single Page Application built with React/Redux, the application uses API calls to display catalogue of pokemons and their statistics by filtering each category of Pokemon through a dropdown list.
 
-Runs the app in the development mode.\
+
+> The project, is built following the [Microverse](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5).<br>
+
+> ​
+> ![screenshot](public/Catalogue-of-pokemons)
+>
+
+## Video Presentation:
+
+[Watch life'n'style](https://www.loom.com/share/40606e58c8d94ecb998cb7d7c0b1226f)
+
+
+## Link to Live host:
+
+[Catalog'fPokemons](https://pokemon-catalogue-stats.herokuapp.com/)
+
+### Project Specification
+
+- Use create-react-app to initialize a new React app
+- Add prop-types using npm for typechecking props.
+- Add the necessary Redux packages to your project.
+- Run the application with npm start and make sure that everything works correctly.
+- Use [create-react-app-buildpack](https://github.com/mars/create-react-app-buildpack) to deploy the app to Heroku
+
+### Built With
+
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- CSS
+- ES6
+- eslint
+- stylelint
+- Jest
+- React Testing library
+
+## Getting Started
+To get a local copy up and running follow these steps:
+
+### Prerequisites
+
+npm
+Node
+create-react-app
+### Setup
+
+- Clone the repository by running the code `https://github.com/uimarshall/catalogue-of-statistics-pokemon`
+- cd into `catalogue-of-statistics-pokemon` folder
+- Run `npm install`.
+- Run `npm start` from your command line to open your app in the browser.
+
+Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### To Fix linting errors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Run `npm run lintfix`
+### Testing
 
-### `npm run build`
+- cd into `catalogue-of-statistics-pokemon` folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
+- Run `npm test`
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Sign up on Heroku
+- follow instruction to deploy on the Heroku: 
 
-### `npm run build` fails to minify
+[Deploy on Heroku](https://github.com/mars/create-react-app-buildpack).
+## Authors
+#### 👤 **Marshall AKPAN**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Github: [@uimarshall](https://github.com/uimarshall)
+- Twitter: [@uimarshall](https://twitter.com/uimarshall)
+- Linkedin: [uimarshall](https://www.linkedin.com/in/marshall-akpan-19745526/)
+
+​
+## 🤝 Contributing
+
+Our favourite contributions are those that help us improve the project, whether with a contribution, an issue, or a feature request!
+
+Feel free to check the [issues page](https://github.com/uimarshall/catalogue-of-statistics-pokemon/issues) to either create an issue or help us out by fixing an existing one.
+## Show your support
+
+Give a ⭐️ if you like this project!
+​
+## :clap: Acknowledgements
+
+- Microverse
+- creativecommons
+- [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) on [Behance](https://www.behance.net/)
+- The Odinproject
+- Freecodecamp
+- <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  
+## �� License
+
+This project is [MIT](lic.url) licensed.
+
+
+
