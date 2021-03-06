@@ -61,6 +61,7 @@ create-react-app
 - cd into `catalogue-of-statistics-pokemon` folder
 - Run `npm install`.
 - Run `npm start` from your command line to open your app in the browser.
+- You can install [Redux Devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)  in your preferred browser, I suspect this should make you run the project locally, if you encounter any issue.
 
 Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
