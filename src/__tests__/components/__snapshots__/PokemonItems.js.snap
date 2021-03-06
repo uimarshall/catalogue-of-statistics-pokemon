@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonItems Component should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex justify-content-center align-items-center"
+  >
+    <div
+      class="spinner-border text-warning"
+    />
+  </div>
+</DocumentFragment>
+`;
