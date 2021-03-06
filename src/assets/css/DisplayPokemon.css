@@ -2,6 +2,7 @@
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  margin: 0 auto;
 }
 
 .feature {
@@ -24,4 +25,10 @@
   color: #fff;
   background: var(--clr-primary-3);
   transform: scaleY(1.1);
+}
+
+@media (max-width: 425px) {
+  .features {
+    margin: 0 auto;
+  }
 }

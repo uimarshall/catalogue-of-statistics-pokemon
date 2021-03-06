@@ -90,6 +90,10 @@
     padding: 30px 15px;
   }
 
+  .col-md-4 {
+    margin: 0 auto;
+  }
+
   .branding .text-highlight {
     font-size: 2.5rem;
   }
