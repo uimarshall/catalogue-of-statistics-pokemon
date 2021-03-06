@@ -1,7 +1,5 @@
 # README
 
-https://github.com/uimarshall/catalogue-of-statistics-pokemon/pull/1
-
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
 # Capstone Project: Catalogue of Statistics
