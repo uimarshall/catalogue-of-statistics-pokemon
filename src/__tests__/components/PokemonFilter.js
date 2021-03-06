@@ -5,6 +5,7 @@ import { cleanup, render, screen } from '@testing-library/react';
 import PokemonFilter from '../../components/PokemonFilter';
 
 const handleFilterChange = () => { ''; };
+afterEach(cleanup);
 describe('PokemonFilter Component', () => {
   test('renders PokemonFilter component without crashing', () => {
     const nonExist = 'No such text';
