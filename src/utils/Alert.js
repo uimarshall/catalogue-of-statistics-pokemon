@@ -7,7 +7,7 @@ function AlertDismissible() {
   const history = useHistory();
 
   const handleGoBack = () => {
-    history.goBack();
+    history.push('/');
   };
   const [show, setShow] = useState(true);
 
