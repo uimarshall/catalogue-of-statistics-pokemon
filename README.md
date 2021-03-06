@@ -12,7 +12,7 @@ Final React Project of the Microverse Technical Curriculum Program, this project
 > The project, is built following the [Microverse](https://www.notion.so/Catalogue-of-Statistics-72446e7fa33c403a9b6a0bc1de5c6cf5).<br>
 
 > ​
-> ![screenshot](public/Catalogue-of-pokemons)
+> ![screenshot](public/Catalogue-of-pokemons.png)
 >
 
 ## Video Presentation:
