@@ -17,7 +17,7 @@ Final React Project of the Microverse Technical Curriculum Program, this project
 
 ## Video Presentation:
 
-[Watch life'n'style](https://www.loom.com/share/40606e58c8d94ecb998cb7d7c0b1226f)
+[Watch Catalogue of Pokemons](https://www.loom.com/share/f032b680574841f59371be7dc62a921f)
 
 
 ## Link to Live host:
@@ -79,9 +79,7 @@ You will also see any lint errors in the console.
 ### Deployment
 
 - Sign up on Heroku
-- follow instruction to deploy on the Heroku: 
-
-[Deploy on Heroku](https://github.com/mars/create-react-app-buildpack).
+- follow instruction to deploy on the Heroku: [Deploy on Heroku](https://github.com/mars/create-react-app-buildpack).
 ## Authors
 #### 👤 **Marshall AKPAN**
 
