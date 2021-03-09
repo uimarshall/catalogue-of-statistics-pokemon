@@ -3,10 +3,10 @@
 exports[`PokemonItems Component should take a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="d-flex justify-content-center align-items-center"
+    class="d-flex justify-content-center align-items-center spinner"
   >
     <div
-      class="spinner-border text-warning"
+      class="spinner-inner spinner-border text-warning"
     />
   </div>
 </DocumentFragment>

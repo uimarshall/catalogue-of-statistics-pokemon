@@ -223,6 +223,14 @@ p {
   margin-top: 10rem;
 }
 
+.spinner .spinner-inner {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  margin: auto;
+  margin-top: 15rem;
+}
+
 main {
   padding-bottom: 2rem;
 }

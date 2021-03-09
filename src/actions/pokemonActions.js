@@ -43,8 +43,11 @@ export const changeType = type => ({
 });
 
 export const pokemonsType = async type => {
-  const response = await axios.get(`${BASE_URL_TYPE}/${type}`);
-  return response.data;
+  const response = await fetch(`${BASE_URL_TYPE}/${type}`);
+
+  if (response.ok) return response.json();
+
+  throw new Error(response.status);
 };
 
 export const pokemonProps = async name => {
